@@ -17,7 +17,8 @@ gulp.task('fycons', function(){
       fontName: fontName,
       // problem is that certain fycons are optimzed for certain heights
       // we can't pass a single fontHeight or normalize without jankifying
-      // another portion
+      // another portion. Maybe split fycons into different files with
+      // their respective heights, pipe separately and then combine into one file?
       // fontHeight: 10,
       normalize: true,
       // TODO: debug support for appendCodepoints
