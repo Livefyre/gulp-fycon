@@ -4,8 +4,8 @@ var sketch = require("gulp-sketch");
 var iconfont = require('gulp-iconfont');
 var consolidate = require('gulp-consolidate');
 
-var fontName = 'fycons'; // set name of your symbol font
-var template = 'fontawesome-style'; // you can also choose 'foundation-style'
+var fontName = 'fycons';
+var template = 'fontawesome-style'; // build livefyre's fycon lodash template
 
 gulp.task('fycons', function(){
   gulp.src('Fycons.sketch')
