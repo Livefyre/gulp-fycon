@@ -1,6 +1,6 @@
 # Fycon Font Generator
 
-We want consolidated codepoint support as well as a build system for Fycons straight from Sketch.app  
+We want consolidated codepoint support as well as a build system for Livefyre's Fycons library straight from Sketch.app to web-ready iconfonts  
 
 ## Requirements
 * Sketchtool (CLI for Sketch) http://bohemiancoding.com/sketch/tool/
@@ -12,3 +12,7 @@ $ gulp fycons
 ```
 
 This will export all files into a ``dist/`` folder.
+
+## Todo
+* Separate fycons into different files to pipe into gulp-iconfont (better height export support)
+* Replace fontawesome template with Livefyre's current webfont implementation
