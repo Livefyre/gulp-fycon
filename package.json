@@ -1,0 +1,30 @@
+{
+  "name": "gulp-fycon",
+  "version": "1.0.2",
+  "homepage": "https://github.com/zethussuen/gulp-fycon",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/zethussuen/gulp-fycon.git"
+  },
+  "description": "Symbol font template for Livefyre Fycons",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "livefyre",
+    "icon font",
+    "fycon",
+    "gulp"
+  ],
+  "author": "Zethus Suen <zethus.suen@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "*",
+    "lodash": "*",
+    "gulp": "*",
+    "gulp-rename": "*",
+    "gulp-consolidate": "*",
+    "gulp-sketch": "*",
+    "gulp-iconfont": "*"
+  }
+}
