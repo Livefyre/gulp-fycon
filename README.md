@@ -13,6 +13,6 @@ $ gulp fycons
 
 This will export all files into a ``dist/`` folder.
 
-## Todo
+## Todo/Known Bugs
 * Separate fycons into different files to pipe into gulp-iconfont (better height export support)
 * Replace fontawesome template with Livefyre's current webfont implementation
