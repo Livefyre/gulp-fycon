@@ -11,6 +11,12 @@ $ npm install
 $ gulp fycons
 ```
 
+## Gulp Tasks
+``$ gulp fycons``: builds webfonts, exports to dist/, builds sample index  
+``$ gulp start``: starts a server with livereload that roots in ``dist/``  
+``$ gulp clean``: removes ``dist/``
+
+
 This will export all files into a ``dist/`` folder.
 
 ## Todo/Known Bugs
