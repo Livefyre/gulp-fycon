@@ -26,4 +26,4 @@ $ gulp fycons
   name: str
 }
 ```
-* Replace fontawesome template with Livefyre's current webfont implementation
+* Replace fontawesome template with Livefyre's current webfont css
