@@ -11,7 +11,7 @@ var gulp = require('gulp'),
 var fontName = 'fycons';
 var template = 'fontawesome-style'; // build livefyre's fycon lodash template
 
-gulp.task('fycons', function(){
+gulp.task('build', function(){
   gulp.src('Fycons.sketch')
     .pipe(sketch({
       export: 'slices',

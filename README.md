@@ -8,11 +8,11 @@ We want consolidated codepoint support as well as a build system for Livefyre's 
 ## Usage
 ```
 $ npm install  
-$ gulp fycons
+$ gulp build
 ```
 
 ## Gulp Tasks
-``$ gulp fycons``: builds webfonts, exports to ``dist/``, builds sample html & css  
+``$ gulp build``: builds webfonts, exports to ``dist/``, builds sample html & css  
 ``$ gulp start``: starts a server w/ livereload that roots in ``dist/``  
 ``$ gulp clean``: removes ``dist/``
 
