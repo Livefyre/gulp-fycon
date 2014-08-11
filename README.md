@@ -12,8 +12,8 @@ $ gulp fycons
 ```
 
 ## Gulp Tasks
-``$ gulp fycons``: builds webfonts, exports to dist/, builds sample index  
-``$ gulp start``: starts a server with livereload that roots in ``dist/``  
+``$ gulp fycons``: builds webfonts, exports to ``dist/``, builds sample html & css  
+``$ gulp start``: starts a server w/ livereload that roots in ``dist/``  
 ``$ gulp clean``: removes ``dist/``
 
 ## Todo/Known Bugs
