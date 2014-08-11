@@ -17,5 +17,13 @@ $ gulp fycons
 ``$ gulp clean``: removes ``dist/``
 
 ## Todo/Known Bugs
-* Separate fycons into different files to pipe into gulp-iconfont (better height export support)
+* Rename fycons with specific nomenclature to pipe into gulp-iconfont for better height export support ($index-$size-fycon-name; 03-32-format-link)
+* Use gulp-tap to edit the gulp stream to convert filename strings into objects:
+```
+{
+  index: int,
+  fontHeight: int,
+  name: str
+}
+```
 * Replace fontawesome template with Livefyre's current webfont implementation
