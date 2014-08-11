@@ -16,9 +16,6 @@ $ gulp fycons
 ``$ gulp start``: starts a server with livereload that roots in ``dist/``  
 ``$ gulp clean``: removes ``dist/``
 
-
-This will export all files into a ``dist/`` folder.
-
 ## Todo/Known Bugs
 * Separate fycons into different files to pipe into gulp-iconfont (better height export support)
 * Replace fontawesome template with Livefyre's current webfont implementation
