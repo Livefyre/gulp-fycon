@@ -1,6 +1,6 @@
 {
   "name": "gulp-fycon",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "https://github.com/zethussuen/gulp-fycon",
   "repository": {
     "type": "git",
@@ -21,13 +21,16 @@
   "devDependencies": {
     "coffee-script": "*",
     "colors": "*",
+    "del": "*",
     "lodash": "*",
     "gulp": "*",
-    "gulp-rename": "*",
+    "gulp-connect": "*",
     "gulp-consolidate": "*",
+    "gulp-iconfont": "*",
     "gulp-print": "*",
-    "map-stream": "*",
+    "gulp-rename": "*",
     "gulp-sketch": "*",
-    "gulp-iconfont": "*"
+    "gulp-tap": "*",
+    "map-stream": "*"
   }
 }
