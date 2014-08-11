@@ -1,4 +1,5 @@
 var gulp = require("gulp");
+var print = require("gulp-print");
 var rename = require("gulp-rename");
 var sketch = require("gulp-sketch");
 var iconfont = require('gulp-iconfont');
@@ -13,6 +14,7 @@ gulp.task('fycons', function(){
       export: 'slices',
       formats: 'svg'
     }))
+    .pipe(print()) // prints to console contents of pipe();
     .pipe(iconfont({
       fontName: fontName,
       // problem is that certain fycons are optimzed for certain heights
@@ -20,17 +22,17 @@ gulp.task('fycons', function(){
       // another portion. Maybe split fycons into different files with
       // their respective heights, pipe separately and then combine into one file?
       // fontHeight: 10,
-      normalize: true,
-      // TODO: debug support for appendCodepoints
-      // appendCodepoints: true
+      // normalize: true,
     }))
     .on('codepoints', function(codepoints) {
+      // set font options {}
       var options = {
         glyphs: codepoints,
         fontName: fontName,
         fontPath: '../fonts/',
         className: 'fycons',
       };
+      // build css src
       gulp.src('templates/' + template + '.css')
         .pipe(consolidate('lodash', options))
         .pipe(rename({ basename:fontName }))

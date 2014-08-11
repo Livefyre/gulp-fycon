@@ -20,10 +20,13 @@
   "license": "MIT",
   "devDependencies": {
     "coffee-script": "*",
+    "colors": "*",
     "lodash": "*",
     "gulp": "*",
     "gulp-rename": "*",
     "gulp-consolidate": "*",
+    "gulp-print": "*",
+    "map-stream": "*",
     "gulp-sketch": "*",
     "gulp-iconfont": "*"
   }
