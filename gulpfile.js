@@ -3,13 +3,14 @@ var gulp = require('gulp'),
     consolidate = require('gulp-consolidate'),
     del = require('del'),
     iconfont = require('gulp-iconfont'),
-    print = require('gulp-print'),
+    path = require('path'),
     rename = require('gulp-rename'),
     sketch = require('gulp-sketch'),
     tap = require('gulp-tap');
 
 var fontName = 'fycons';
-var template = 'fontawesome-style'; // build livefyre's fycon lodash template
+var template = 'fontawesome-style'; // TODO: build livefyre's fycon lodash template
+var arr = [];
 
 gulp.task('build', function(){
   gulp.src('Fycons.sketch')
@@ -17,18 +18,19 @@ gulp.task('build', function(){
       export: 'slices',
       formats: 'svg'
     }))
-    // .pipe(tap(function(file)) {
-
-    // })
-    // .pipe(print()) // prints to console contents of pipe();
+    .pipe(tap(function(file, t) {
+      var fileName = path.basename(file.path);
+      var split = fileName.split('-');
+      var tmp = {
+        'index': +split[0],
+        'fontHeight': +split[1],
+        'name': split.slice(2).join('-'),
+      };
+      arr.push(tmp);
+      console.log(arr);
+    }))
     .pipe(iconfont({
       fontName: fontName,
-      // problem is that certain fycons are optimzed for certain heights
-      // we can't pass a single fontHeight or normalize without jankifying
-      // another portion. Maybe split fycons into different files with
-      // their respective heights, pipe separately and then combine into one file?
-      // fontHeight: 12,
-      // normalize: true,
     }))
     .on('codepoints', function(codepoints) {
       // set font options {}

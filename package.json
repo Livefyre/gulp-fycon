@@ -27,7 +27,6 @@
     "gulp-connect": "*",
     "gulp-consolidate": "*",
     "gulp-iconfont": "*",
-    "gulp-print": "*",
     "gulp-rename": "*",
     "gulp-sketch": "*",
     "gulp-tap": "*",
